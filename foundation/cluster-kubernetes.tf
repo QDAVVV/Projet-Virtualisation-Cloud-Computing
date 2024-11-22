@@ -1,10 +1,10 @@
 resource "scaleway_vpc_private_network" "pn" {}
 
 resource "scaleway_k8s_cluster" "cluster" {
-  name    = "tf-cluster"
-  version = "1.29.1"
-  cni     = "cilium"
-  private_network_id = scaleway_vpc_private_network.pn.id
+  name                        = "tf-cluster"
+  version                     = "1.29.1"
+  cni                         = "cilium"
+  private_network_id          = scaleway_vpc_private_network.pn.id
   delete_additional_resources = false
 }
 

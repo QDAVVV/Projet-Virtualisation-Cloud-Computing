@@ -13,14 +13,14 @@ resource "scaleway_rdb_instance" "main" {
 
 ##--------------------BDD DEV--------------------------
 resource "scaleway_rdb_database" "dev" {
-  instance_id    = scaleway_rdb_instance.main.id
-  name           = "BDD-DEV"
+  instance_id = scaleway_rdb_instance.main.id
+  name        = "BDD-DEV"
 }
 
 
 
 ##--------------------BDD PROD-------------------------
 resource "scaleway_rdb_database" "prod" {
-  instance_id    = scaleway_rdb_instance.main.id
-  name           = "BDD-PROD"
+  instance_id = scaleway_rdb_instance.main.id
+  name        = "BDD-PROD"
 }

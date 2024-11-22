@@ -1,6 +1,6 @@
 #--------------------Variable----------------------
 variable "ProjetVCC" {
-  type = string
+  type        = string
   description = "ProjetVCC"
 }
 
@@ -17,7 +17,7 @@ terraform {
 
 
 provider "scaleway" {
-  zone = "fr-par-1"
+  zone   = "fr-par-1"
   region = "fr-par"
 }
 
